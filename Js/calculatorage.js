@@ -1,5 +1,5 @@
 function calcularedad(){
-    alert("hola soy yo de nuevo");
+    //alert("hola soy yo de nuevo");
     const date_input = document.getElementById("CalculatorAge").value;
     console.log(date_input)
     if(date_input.length == 0){
@@ -13,12 +13,12 @@ function calcularedad(){
         let edad = today.getFullYear() - date.getFullYear();
         if(edad < 0 || (edad === 0 && today.getDate() < date.getDate() )){
         edad --;
+        swal.fire(`Tienes $[edad] años`);
         }
-        swal.fire(`Tienes ${edad} años`);
         console.log(edad)
 
     }
-    console.log(today.getDate())
+    /*console.log(today.getDate())
     console.log(today.getDay())
     console.log(today.getFullYear())
     console.log(today.getHours())
@@ -27,7 +27,7 @@ function calcularedad(){
     console.log(today.getMonth())
     console.log(today.getSeconds())
     console.log(today.getTime())
-    console.log(today.getTimezoneOffset())
+    console.log(today.getTimezoneOffset())*/
 
 
 }
