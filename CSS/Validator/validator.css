@@ -1,4 +1,4 @@
- body{
+body{
             font-family: Arial, sans-serif;
             background:#bf830a;;
             background: linear-gradient(90deg,rgba(191, 131, 10, 1) 11%, rgba(9, 9, 121, 1) 60%, rgba(0, 212, 255, 1) 76%);
@@ -15,6 +15,9 @@
             text-align: center;
             width: 350px;
             box-shadow: 0px 0px 35px 11px rgba(0,0,0,0.53);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
             
         }
         input[type="password"],
@@ -28,7 +31,7 @@
         }
         #button{
             margin-top: 15px;
-            background-color: aquamarine;
+            background-color: rgb(254, 255, 255);
             border: none;
             padding: 10px 20px;
             border-radius: 10px;
@@ -38,7 +41,7 @@
         }
         #button:hover{
             box-shadow: 0px 0px 15px 1px rgba(94, 130, 146, 0.53);
-            background-color: #c35784;
+            background-color: #0442fb;
             color: white;
             transform: scale(1.1);
             
@@ -54,4 +57,14 @@
         .inputs{
             position: relative;
             width: 100%;
+        }
+        a{
+            text-decoration: none;
+            color: #888;
+            
+        }
+        a:hover{
+            color: #393838;
+            text-decoration: underline;
+            
         }
