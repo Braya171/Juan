@@ -4,9 +4,9 @@ const tasks = document.querySelector('#tasks')
 
 btn.addEventListener('click',() =>
 {
-console.log(input.value)
-const templete = `<p>{input.value}</p>`
-;
+console.log(input.value);
+
+const templete = `<p>{input.value}</p>`;
 
 tasks.insertAdjacentHTML('beforeend', templete);
 });
